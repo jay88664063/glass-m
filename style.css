@@ -1,0 +1,86 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+label {
+    display: block;
+    padding: 10px 0px;
+}
+
+input {
+    margin: 0px 30px;
+}
+
+.btn {
+    padding: 10px 0px;
+
+}
+
+.btn button {
+    color:aqua;
+    background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    border: none;
+    padding:10px 10px;
+    border-radius: 5px;
+}
+
+.btn1 button {
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    margin: 0px 10px;
+    color: blueviolet;
+    padding:10px 5px;
+    border: none;
+    font-weight: 550;
+    border-radius: 5px;
+}
+
+.btn1 button i{
+    
+    padding:0px 5px;
+    color:blue;
+}
+
+.main {
+    background-image: url('https://burst.shopifycdn.com/photos/city-lights-through-rain-window.jpg?width=1200&format=pjpg&exif=1&iptc=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1000px;
+    height: 850px;
+    perspective: 1000px;
+}
+
+.form {
+    padding: 50px 5px;
+}
+
+label {
+    color: yellow;
+    font-size: 20px;
+    font-weight: 550;
+}
+
+.card {
+    width: 350px;
+    height: 350px;
+    border-radius: 25px;
+    transform-style: preserve-3d;
+    background-color: transparent;
+    backdrop-filter: blur(3px);
+    transition: all 0.9s ease-in-out;
+    border: 2px solid yellow;
+    /* backface-visibility: hidden; */
+}
+
+.main:hover .card {
+    transform: rotateY(360deg);
+    transition: all 3s linear;
+}
